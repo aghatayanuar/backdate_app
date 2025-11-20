@@ -5,6 +5,9 @@ frappe.ui.form.on("Backdate Setting", {
 	refresh(frm) {
         set_date_field_value(frm);
 	},
+    backdate_doc(frm){
+        set_date_field_value(frm);
+    }
 });
 
 
