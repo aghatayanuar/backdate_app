@@ -145,6 +145,14 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+    "*": {
+        "before_insert": "backdate_app.backdate_app.doctype.backdate_setting.backdate_setting.check_backdate_create",
+        "validate": "backdate_app.backdate_app.doctype.backdate_setting.backdate_setting.check_backdate_validate"
+    }
+}
+
+
 # Scheduled Tasks
 # ---------------
 
